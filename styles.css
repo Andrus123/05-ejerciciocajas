@@ -4,10 +4,10 @@ Ejercicio completo con HTML y CSS
 2. (hecho)Crear una estructura HTML que cuente con un CONTENEDOR GENERAL, 
     HEADER, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL,
     ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL, Y UN FOOTER.
-3. Todo el contenido debe estar dentro del CONTENEDOR GENERAL y su
-    ancho será de 1200px
-4.  Header debe ocupar el 100% del ancho y tener un texto grande
-5. Menu debe tener los elementos uno al lado del otro
+3.(hecho) Todo el contenido debe estar dentro del CONTENEDOR GENERAL y su
+    ancho será de 1200px y estar centrado
+4.(hecho)Header debe ocupar el 100% del ancho y tener un texto grande
+5.(hecho)Menu debe tener los elementos uno al lado del otro
 6. El contenido principal debe tener un ancho del 70%
 7. El contenido dentro del contenedor principal debe ser una cuadricula 
     con 4 lineas de 2 cajas
@@ -19,4 +19,51 @@ Ejercicio completo con HTML y CSS
     margin: 0px;
     padding:0px;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general {
+    width: 1200px;
+    margin: 0px auto;
+    margin-top: 20px;
+    border: 1px solid #cccccc;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background: rgb(44, 122, 224);
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#menu{
+    background-color:#eeeeee;
+}
+
+#menu ul li{
+    /*display: inline-block;*/
+    display: block;
+    float: left;
+    border-right: 1px solid #cccccc;
+}
+
+#menu ul li a{
+    display: block;
+    padding: 15px;
+    color: #444444;
+}
+#menu ul li:hover{
+    background-color: rgb(24, 88, 172);
+    cursor: pointer;
+}
+
+#menu ul li:hover a{
+    color: white;
 }
